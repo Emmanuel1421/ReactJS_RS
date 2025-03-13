@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { Post } from './Post';
+import { Post } from './components/Post';
 import styles from './App.module.css';
 
 import './global.css';
@@ -15,10 +15,10 @@ export function App() {
            <main>
             <Post 
             author="Emmanuel Guerra"
-            content="Olá"
-            />    
+            content="Olá Rede!"
+            />    <br />
             <Post 
-            author="Diego Alcântara"
+            author="Francisco Garcia"
             content="Texto aleatorio"
             />  
            </main>
