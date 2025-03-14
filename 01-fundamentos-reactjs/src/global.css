@@ -1,3 +1,4 @@
+
 :root{
     --white: #fff;
     --gray-100: #e1e1e6;
@@ -8,7 +9,13 @@
     --gray-800: #202024;
     --gray-900: #121214;
 
+    --green-300:#0ab985;
     --green-500: #00875f;
+}
+
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
 }
 
 * {
