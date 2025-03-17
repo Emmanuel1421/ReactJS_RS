@@ -22,15 +22,6 @@
                     /*o 0px faz com que ao sser subtraido por 1.5,ele fique negativo,dessa forma ele vai mais pra cima,sem isso ele fica separado da imagem*/ /*o 1.5 é a metade do width do avatar e o 6 é a metade do height*/
 }
 
-.avatar{
-    
-    width: calc(3rem + 12px);/*o calculo é border 4px + border 4px + outline 2px + outline 2px = 12*/
-    height: calc(3rem + 12px);
-    border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 2px solid var(--green-500);
-}
-
 .profile strong {
     margin-top: 1rem;
     color: var(--gray-100);
