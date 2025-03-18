@@ -7,17 +7,7 @@ import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 export function Post({author , publishedAt, content}) {
-    
-        const publishedDateFormatted = format (publishedAt,"d 'de' LLLL 'às' HH:mm'h '",{
-            locale: ptBR,
-        })
-        
-        const publishedDateRelativeToNow = formatDistanceToNow (publishedAt,
-            {loca: ptBR,   
-                addSuffix :true,   
-            })
-
-       return (
+    return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
@@ -35,14 +25,13 @@ export function Post({author , publishedAt, content}) {
 
 
             <div className={styles.content}>
-           {content.map(line =>{
+            {content.map(line =>{
             if(line.type == 'paragraph'){
                 return <p>{line.content}</p>
             } else if (line.type == 'link'){
                 return <p><a href="">{line.content}</a></p>
             }
-           })}
-            </div>
+           })}            </div>
 
             <form className={styles.commentForm}>
                 <strong>Deixe seu feedback</strong>
